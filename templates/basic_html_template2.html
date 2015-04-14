@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<!--This is a basic HTML page! HTML is what builds websites, basically. You can code what you want to see
+    and the HTML pops that out on the webpage! What you're reading now is a comment, only you can see comments! The website
+    won't see this and therefore these wont be displayed!-->
+<!--HTML is built using tags held within < > these! such as <div> <body> <ul> -->
+<!-- You build the sructure of your website in these tags!-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HTML Form Template</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+
+<!--Here you can edit the styling of your site! This is known as CSS. The HTML
+    is responsible for the information and the CSS makes it look nice!-->
+
+<style>
+    /*Edit this number to have more curved edges on your boxes!  */
+    .content1, .content2, .content3{
+        border-radius: 10px;
+    }
+    /*Edit this to change the color of the first box*/
+    .content1{
+        height: 50px;
+        background-color: #ff5640;
+    }
+    /*Edit this to change the color of the second box!*/
+    .content2{
+        height: 50px;
+        background-color: #6cff7c;
+    }
+    /*Edit this to change the color of the third box!*/
+    .content3{
+        height: 50px;
+        background-color: #636fff;
+    }
+    .spacer{
+         height: 100px;
+     }
+    .spacer2{
+        height: 50px;
+    }
+    .info{
+        text-align: center;
+    }
+
+</style>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Your Title Here!</h1>
+    </div>
+
+ <div class="row">
+     <div class="info">
+         <!--Change the number after the h from 1-6 for bigger and smaller sizes! 1 being the biggest -->
+         <h3>This is a little paragraph of info about me! I'm making this website using html!</h3>
+         <p>*MORE INFO HERE*</p>
+     </div>
+ </div>
+
+
+<div class="spacer"></div>
+
+<div class="row">
+    <div class="col-sm-4 content1">This is my favourite band/artist!</div>
+    <div class="col-sm-4 content2">This is my favourite TV Show!</div>
+    <div class="col-sm-4 content3">This is my favourite food! </div>
+</div>
+    <div class="spacer2"></div>
+
+    <div class="row pictures">
+        <div class="col-md-4">
+            <a href="http://en.wikipedia.org/wiki/The_Killers" class="thumbnail">
+                <p>These are The Killers!</p>
+                <img src="images/thekillers.jpg" style="width:250px;height:250px">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="http://en.wikipedia.org/wiki/House_of_Cards_%28U.S._TV_series%29" class="thumbnail">
+                <p>This is House of Cards!</p>
+                <img src="images/house-of-cards.jpg" style="width:250px;height:250px">
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="http://en.wikipedia.org/wiki/Arrabbiata_sauce" class="thumbnail">
+                <p>This is Chicken Arribiata!</p>
+                <img src="images/chickenpasta.jpg" style="width:250px;height:250px">
+            </a>
+        </div>
+    </div>
+</div>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HTML Form Template</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	
+	<style>
+		/* Adjust table width */
+		table {
+			width:100%;
+		}
+		
+		/* Adjust table border line */
+		table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+		}
+		
+		/* Adjust table cell */
+		th, td {
+			padding: 5px;
+			text-align: left;
+		}
+		
+		/* Adjust table row color for even */
+		table tr:nth-child(even) {
+			background-color: #eee;
+		}
+		
+		/* Adjust table row color for odd */
+		table tr:nth-child(odd) {
+		   background-color:#fff;
+		}
+		
+		/* Adjust table background color and text color */
+		table th	{
+			background-color: black;
+			color: white;
+		}
+	</style>
+  </head>
+  <body>
+    <div class="container">
+	
+	<h1 class="text-muted">Wish List</h1>
+	<hr/>
+	
+	<table>
+		<tr>
+			<th>Image</th>
+			<th>Name</th>
+			<th>Website</th>
+		</tr>
+		<tr>
+			<td><img src="images/hello.jpg" alt="" width="200" height="200"></td>
+			<td>Name A</td>
+			<td><a href="http://www.w3schools.com/" target="_blank">Website A</a></td>
+		</tr>
+		<tr>
+			<td><img src="images/hello.jpg" alt="" width="200" height="200"></td>
+			<td>Name B</td>
+			<td><a href="http://www.w3schools.com/" target="_blank">Website B</a></td>
+		</tr>
+		<tr>
+			<td><img src="images/hello.jpg" alt="" width="200" height="200"></td>
+			<td>Name C</td>
+			<td><a href="http://www.w3schools.com/" target="_blank">Website C</a></td>
+		</tr>
+	</table>
+    
+	</div>
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>
