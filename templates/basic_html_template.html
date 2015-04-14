@@ -11,33 +11,51 @@
   </head>
   <body>
     <div class="container">
-	
-	<h1 class="text-muted">User login</h1>
-	<hr/>
-	
-    <form>
-    	<div class="form-group">
-    		<label for="emailField">Email address</label>
-			<input type="email" class="form-control" id="emailField" placeholder="Enter email">
-    	</div>
-    	<div class="form-group">
-    		<label for="passwordField">Password</label>
-			<input type="password" class="form-control" id="passwordField" placeholder="Enter password">
-    	</div>
+		<!-- Title -->
+		<h1 class="text-muted">User login</h1>
 		
-		<div class="checkbox">
-			<label>
-				<input type="checkbox" /> Remember Me
-			</label>
+		<!-- Draw Line -->
+		<hr/>
+		
+		<!-- Login Form -->
+		<form>
+			<!-- Username -->
+			<div class="form-group">
+				<!-- Label: Username -->
+				<label for="usernameField">Username</label>
+				<!-- Input Text: User can type a username -->
+				<input type="text" class="form-control" id="usernameField" placeholder="Enter username">
+			</div>
+			
+			<!-- Password -->
+			<div class="form-group">
+				<!-- Label: Password -->
+				<label for="passwordField">Password</label>
+				<!-- Input Password: User can type a password -->
+				<input type="password" class="form-control" id="passwordField" placeholder="Enter password">
+			</div>
+			
+			<!-- Check Box -->
+			<div class="checkbox">
+				<label>
+					<input type="checkbox" /> Remember Me
+				</label>
+			</div>
+			
+			<!-- Login Button -->
+			<button type="button" class="btn btn-success" onclick="document.getElementById('showImage').style.display = 'block'">Login</button>
+			
+		</form>
+		
+		<br/>
+	
+		<!-- Image (At the beginning, the image is hidden) -->
+		<div class="container" id="showImage" style="display:none;">
+			<!-- You can add any image here -->
+			<img src="images/hello.jpg" alt="" />
 		</div>
-	
-		<button type="submit" class="btn btn-success" onclick="$('#image').show();">Login</button>
-		
-    </form>
-	<br/>
-	
-	<div id="image" style="display:none;"><img src="images/hello.jpg" alt="" /></div>
 	</div>
+	
 	
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
